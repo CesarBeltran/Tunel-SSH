@@ -66,3 +66,6 @@ Por último, se crea un link simbólico para que el script sshgateway sea inicia
 Se realiza pruebas de reinicio sobre el servidor Gateway confirmando que luego del reinicio, el script es ejecutado automáticamente.
 
 #### Nota
+Para esta practica de laboratorio, se habian configurado los servidores previamente para para permitir la conexión haciendo uso de llave publica/privada con el fin que no sea necesario especificar usuario y password al momento de crear el tunel SSH.
+Dicho procedimiento se encuentra en el siguiente repositorio: https://github.com/CesarBeltran/Autenticacion-ssh-llave-publica
+

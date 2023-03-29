@@ -24,6 +24,7 @@ La máquina cliente Windows es el mismo Host donde están las dos maquinas virtu
 
 Paso 1
 Como primer lugar se sube servicio apache en el servidor Web VMKALI2 IP 192.168.31.179.
+
 	systemctl start apache2
 	
 

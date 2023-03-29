@@ -46,7 +46,7 @@ Como se puede observar a continuación, se está realizando autenticación hacia
 
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/CesarBeltran/Tunel-SSH/main/Img/Webp8080.jpg" width="700" />
+<img src="https://raw.githubusercontent.com/CesarBeltran/Tunel-SSH/main/Img/Webp8080.jpg" width="740" />
 </p>
 
 

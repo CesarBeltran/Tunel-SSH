@@ -29,7 +29,7 @@ Como primer lugar se sube servicio apache en el servidor Web VMKALI2 IP 192.168.
 	
 
 ### Paso 2
-En el servidor SSH Gateway se realiza la adición el siguiente parámetro en el fichero /etc/ssh/ssh_config, esto con el fin de permitir las conexiones desde cualquier dirección IP. Después de esto se reinicia servicio ssh.
+En el servidor SSH Gateway se realiza la adición el siguiente parámetro en el fichero /etc/ssh/ssh_config, (NO en el fichero sshd_config) esto con el fin de permitir las conexiones desde cualquier dirección IP. Después de esto se reinicia servicio ssh.
 Si no se modifica este parámetro, los puertos que se abran en este servidor únicamente estarán disponibles para localhost, es decir 127.0.0.1. 
 
 	GatewayPorts yes
@@ -38,8 +38,6 @@ Si no se modifica este parámetro, los puertos que se abran en este servidor ún
 ### Paso 3
 En este paso se debe crear en el servidor Gateway un script con el comando necesario para el túnel SSH, sin embargo, inicialmente se va a realizar la ejecución del comando de forma manual para verificar el funcionamiento.
 Para crear el túnel SSH se realiza con el siguiente comando, se agrega el parámetro (-v) para activar el modo verbose y poder ver en tiempo real el estado del túnel y sus conexiones.
-
-	ssh -v -N -T -C -L 8080:SRV_GATEWAY:80 SRV_WEB
 
 	ssh -v -N -T -C -L 8080:192.168.31.136:80 192.168.31.179
 

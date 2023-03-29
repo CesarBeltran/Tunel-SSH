@@ -45,13 +45,13 @@ Para crear el túnel SSH se realiza con el siguiente comando, se agrega el pará
 Como se puede observar a continuación, se está realizando autenticación hacia el servidor Web (VMKALI2 IP 192.168.31.179) a través de llave publica, adicionalmente el puerto 8080 está escuchando en todas las interfaces del servidor.
 
 
+Desde el navegador del servidor Windows se realiza conexión hacia el servidor Gateway por el puerto 8080 de forma exitosa como se muestra a continuación.
+http://kali:8080 
+
 <p align="center">
 <img src="https://raw.githubusercontent.com/CesarBeltran/Tunel-SSH/main/Img/Webp8080.jpg" width="740" />
 </p>
 
-
-Desde el navegador del servidor Windows se realiza conexión hacia el servidor Gateway por el puerto 8080 de forma exitosa como se muestra a continuación.
-http://kali:8080 
 
 Luego de confirmar que el túnel se crea correctamente se realiza el Script etc/init.d/sshgateway.sh
 	
@@ -65,4 +65,4 @@ Por último, se crea un link simbólico para que el script sshgateway sea inicia
 
 Se realiza pruebas de reinicio sobre el servidor Gateway confirmando que luego del reinicio, el script es ejecutado automáticamente.
 
-
+#### Nota
